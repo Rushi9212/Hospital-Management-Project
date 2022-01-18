@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Add Patient Information</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        
+        
+    
+        <div class="form-group">
+            <label> <b>Name</b></label>
+            <input type="text" class="form-control" id="name"
+               [(ngModel)] = "patient.name" name="name" >
+    
+        </div>
+    
+        <div class="form-group">
+            <label><b> Doctor Name</b></label>
+            <input type="text" class="form-control" id="visitedDoctor"
+               [(ngModel)] = "patient.visitedDoctor" name="visitedDoctor" >
+
+        </div>
+
+        <div class="form-group">
+            <label> <b>Date of Visit</b></label>
+            <input type="text" class="form-control" id="dateofVisit"
+               [(ngModel)] = "patient.dateofVisit" name="dateofVisit" >
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>

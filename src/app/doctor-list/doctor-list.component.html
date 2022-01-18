@@ -1,0 +1,25 @@
+<h2>Doctors List </h2>
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th>Doctor Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Specialist</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let doctor of doctors" >
+            <td><b>{{doctor.id}}</b></td>
+            <td><b>{{doctor.name}} </b></td> 
+            <td><b>{{doctor.age}}</b></td>
+            <td><b>{{doctor.gender}}</b></td>
+            <td><b>{{doctor.specialistfields}}</b></td>
+
+            
+
+        </tr>
+    </tbody>
+</table>

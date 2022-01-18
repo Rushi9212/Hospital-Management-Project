@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Patient Information</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label>Patient Id</label>
+            <input type="text" class="form-control" id="id"
+               [(ngModel)] = "patient.id" name="id" >
+    
+        </div>
+    
+        <div class="form-group">
+            <label> Name</label>
+            <input type="text" class="form-control" id="name"
+               [(ngModel)] = "patient.name" name="name" >
+    
+        </div>
+    
+        <div class="form-group">
+            <label>Visited Doctor Name</label>
+            <input type="text" class="form-control" id="visitedDoctor"
+               [(ngModel)] = "patient.visitedDoctor" name="visitedDoctor" >
+
+        </div>
+
+        <div class="form-group">
+            <label> Date of Visit</label>
+            <input type="text" class="form-control" id="dateofVisit"
+               [(ngModel)] = "patient.dateofVisit" name="dateofVisit" >
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>
